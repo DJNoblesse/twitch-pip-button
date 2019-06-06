@@ -28,7 +28,7 @@ var playerReady = setInterval(function() {
 
 		document.querySelector("div.player-buttons-right").insertBefore(btn, document.querySelector("button.player-button--fullscreen"));
 		btn.addEventListener("click", function() {
-			document.querySelector("video").webkitSetPresentationMode('picture-in-picture');
+			document.querySelector('div.player-video video').requestPictureInPicture();
 		});
 	}
 }, 100);
